@@ -44,7 +44,7 @@
 
 <body>
     <div class="content">
-        <h2>距离《辉夜大小姐想让我告白？～天才们的恋爱头脑战～》第三话播出还有</h2>
+        <h2>距离《辉夜大小姐想让我告白？～天才们的恋爱头脑战～》第三话 播出还有</h2>
         <div class="timer">
             <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
         </div>
@@ -53,7 +53,7 @@
         function timer() {
           window.setTimeout("show_date_time()", 1000);
           var start = new Date("2020-04-26 00:00:00");
-            var t = new Date().getTime() - start;
+            var t = start - new Date().getTime();
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
                 h = "0" + h;
